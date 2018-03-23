@@ -7,7 +7,7 @@ For each strategy, the program collects and outputs the following information:
 * total number of nodes generated
 * length of the solution path (number of moves)
 
-## Testing
+## Test Cases
 **Goal board configuration**:
 <table>
   <tr>
@@ -27,7 +27,7 @@ For each strategy, the program collects and outputs the following information:
   </tr>
 </table>
 
-**test cases**:
+**Initial board configurations**:
 <table>
   <tr>
     <td>
@@ -113,7 +113,9 @@ For each strategy, the program collects and outputs the following information:
   </tr>
 </table>
 
-Note: While A* performs well even on the worst case, the program crashes before the [BFS function][1] completes due to its memory-hogging nature. Tested as a 32-bit executable running on a 64-bit Windows® 7 OS with Intel® Core™ i5 and 8 GB RAM.
+Notes:
+* While A* performs well even on the worst case, the program crashes before the [BFS function][1] completes due to its memory-hogging nature. Tested as a 32-bit executable running on a 64-bit Windows® 7 OS with Intel® Core™ i5 and 8 GB RAM.
+* While there are 9! total number of configurations possible to input, only half of them are solvable. Read more about the solvability of certain configurations of the n-puzzle in this Wikipedia [article][2] or in this MathWorld [explanation][3].
 
 ## Compilation
 On Windows, compile and run using the following commands
@@ -128,3 +130,5 @@ gcc main.c -o Solver
 ```
 
 [1]: https://github.com/C-Collamar/8-Puzzle-Solver/blob/32ce09b52a540356fd52a1a6b76120bbc0dbe042/main.c#L61-L61
+[2]: https://en.wikipedia.org/wiki/15_puzzle#Solvability
+[3]: http://mathworld.wolfram.com/15Puzzle.html
