@@ -113,10 +113,11 @@ NodeList* getChildren(Node *parent, State *goalState) {
  *    This simply evaluates the node's total cost, i.e. path cost + heuristic value.
  *    Created to abstract the proccess and reduce code cluttering. Note that
  *    a node's path cost in a tree depends purely on the node's depth, so the node's
- *    depth will be representing the path cost (to minimize memory space).
+ *    depth will be representing the path cost (to save space).
  * PARAMETER:
+      node - the node to get its total cost
  * RETURN:
- *    Retuns the integer sum of the nodes path cost and heuristic value
+ *    Retuns the integer sum of the node's path cost and heuristic value
 **/
 int totalCost(Node * const node) {
     return node->depth + node->hCost;
