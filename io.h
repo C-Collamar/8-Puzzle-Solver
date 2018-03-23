@@ -33,8 +33,7 @@ void printInstructions(void) {
 
 /**
  * DESCRIPTION:
- *    This function fills `state` with non-repeating numbers n where
- *    1 <= n < 9
+ *    This function fills `state` with non-repeating numbers from 0 to 9
 **/
 void inputState(State * const state) {
     state->action = NOT_APPLICABLE;
@@ -126,6 +125,6 @@ void printSolution(struct SolutionPath *path) {
         " - Nodes expanded  : %i\n"
         " - Nodes generated : %i\n"
         " - Runtime         : %g milliseconds\n"
-        " - Memory used     : %i bytes\n", //only counting allocaed `Node`s
+        " - Memory used     : %i bytes\n", //only counting allocated `Node`s
         solutionLength, nodesExpanded, nodesGenerated, runtime, nodesGenerated * sizeof(Node));
 }
