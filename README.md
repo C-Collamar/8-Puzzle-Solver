@@ -113,7 +113,7 @@ For each strategy, the program collects and outputs the following information:
   </tr>
 </table>
 
-Notes: While A* performs well even on the worst case, the program crashes before the [BFS function][1] completes due to its memory-hogging nature. Tested as a 32-bit executable running on a 64-bit Windows® 7 OS with Intel® Core™ i5 and 8 GB RAM.
+Note: While A* performs well even on the worst case, the program crashes before the [BFS function][1] completes due to its memory-hogging nature. Tested as a 32-bit executable running on a 64-bit Windows® 7 OS with Intel® Core™ i5 and 8 GB RAM.
 
 ## Compilation
 On Windows, compile and run using the following commands
