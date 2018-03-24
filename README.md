@@ -1,5 +1,5 @@
 # 8-Puzzle-Solver
-An C-implementation to solve the 8-puzzle problem using the uninformed search strategy _BFS (Breadth-First Search)_ and heusitic search strategy _A*_. The goal is to empirically compare both strategies' space and time performance.
+An C-implementation solving the 8-puzzle problem using the uninformed search strategy _BFS (Breadth-First Search)_ and heusitic search strategy _A*_. The goal is to empirically compare both strategies' space and time performance.
 
 For each strategy, the program collects and outputs the following information:
 * sequence of moves corresponding to the solution (e.g. up, down, left, right)
@@ -129,6 +129,6 @@ gcc main.c -o Solver
 ./Solver
 ```
 
-[1]: https://github.com/C-Collamar/8-Puzzle-Solver/blob/32ce09b52a540356fd52a1a6b76120bbc0dbe042/main.c#L61-L61
+[1]: https://github.com/C-Collamar/8-Puzzle-Solver/blob/1ce3bfe8b8b2fdac013fd8fcfa9c851817fefdde/main.c#L61
 [2]: https://en.wikipedia.org/wiki/15_puzzle#Solvability
 [3]: http://mathworld.wolfram.com/15Puzzle.html
